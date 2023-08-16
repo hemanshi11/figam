@@ -103,6 +103,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 160%;
 }
+.text-mute{
+    color: #676972;
+font-family: Poppins;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.125rem; /* 100% */
+letter-spacing: -0.0225rem;
+}
 .btn {
     /* margin: auto; */
     /* border-radius: 25px; */
@@ -151,6 +160,46 @@ gap: 0.625rem;
     line-height: 3.5rem;
     max-width: 400px;
 }
+.bg-img {
+    position: relative;
+    background-image: url("Rectangle 12 (2).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20rem;
+    width: 100%;
+    height: 20rem;
+    /* padding: 2rem  2rem !important; */
+}
+
+.bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #031333;
+    opacity: 0.8;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Adjust the top position of the text */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    width: 100%;
+    padding: 2rem;
+    /* height: 100%; */
+    color: white;
+}
+
+.text-overlay h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
 
 .content {
     font-family: Inter;
@@ -164,7 +213,22 @@ gap: 0.625rem;
 .main-heading span {
     color: orangered;
 }
-
+.icon{
+    padding: 0.4rem 1.5rem;
+    background-color: #F54C1E;
+    border-radius: 50%;
+    color: white;
+}
+.button{
+    height: 4.875rem;
+padding: 0.875rem 1.0625rem;
+border-radius: 0.125rem;
+background: #F54C1E;
+font-size: 1.375rem;
+border: none;
+color: white;
+/* font-weight: 700; */
+}
 @media (max-width:991px) {
     .btns {
         display: flex;
@@ -174,8 +238,7 @@ gap: 0.625rem;
     }
 
     .btn {
-        /* margin: auto; */
-        /* border-radius: 25px; */
+       
         padding: 2px 30px;
         margin-right: 3rem;
         margin-top: 3rem;
@@ -191,3 +254,13 @@ gap: 0.625rem;
         padding: 2px 2px;
     }
 }
+
+
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
